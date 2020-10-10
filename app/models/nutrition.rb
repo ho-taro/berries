@@ -6,4 +6,12 @@ class Nutrition < ApplicationRecord
     validates :lipid, numericality: { only_integer: true }
     validates :carbohydrate, numericality: { only_integer: true }
   end
+
+  def self.search(search)
+    if search != ""
+      Nutrition.where('ingredient LIKE(?)', "%#{search}%")
+    else
+      Nutrition.all
+    end
+  end
 end

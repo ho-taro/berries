@@ -12,8 +12,8 @@ class NutritionsController < ApplicationController
     Nutrition.create(nutrition_params)
   end
 
-  def show
-    
+  def search
+    @nutritions = Nutrition.search(params[:keyword])
   end
 
 
