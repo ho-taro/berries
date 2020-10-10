@@ -1130,10 +1130,22 @@ form input[type="submit"]:hover {
   text-decoration: underline;
 }
 
+.footer-top {
+  font-size: x-large;
+  border-radius: 20px;
+  border: solid 1px;
+  width: 20%;
+  display: inline-block;
+}
+
 footer {
   margin: 30px auto;
   padding: 10px;
   color: #D8D8D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer p {
