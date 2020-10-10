@@ -129,10 +129,7 @@ hr {
 
 /*
  * Address styling not present in IE 8/9. */
-mark {
-  background: yellow;
-  color: black;
-}
+
 
 /*
  * Correct font family set oddly in Safari 5 and Chrome. */
@@ -846,7 +843,7 @@ header.header .user_nav ul li a {
   right: 0;
 }
 
-/*作業中　（コンテンツ）*/
+/*作業中（コンテンツ）*/
 
 .main-contents {
   background-image: url("3825642_s.jpg");
@@ -1048,6 +1045,16 @@ div.contents.row .success h3 {
   margin: 10px auto;
 }
 */
+
+/*deleteアクション*/
+
+.ingredient-culomn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more {
+}
 
 form input,
 form textarea {

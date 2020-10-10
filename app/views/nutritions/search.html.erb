@@ -1,5 +1,5 @@
 <%= form_with(url: search_nutritions_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+  <%= form.text_field :keyword, placeholder: "食品名を入力", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 
@@ -15,8 +15,16 @@
       </tr>
 
       <% @nutritions.each do |nutrition| %>
-        <tr height="40" class="content-post">
-          <td ><%= nutrition.ingredient %></td>
+        <tr height="60" class="content-post">
+          <td class="ingredient-culomn"><%= nutrition.ingredient %>
+            <div class="more">
+              <ul class="more-list">
+                <li>
+                  <%= link_to '削除', nutrition_path(nutrition.id), method: :delete, data: { confirm: '削除しますか？'} %>
+                </li>
+              </ul>
+            </div>
+          </td>
           <td><%= nutrition.protein %></td>
           <td><%= nutrition.lipid %></td>
           <td><%= nutrition.carbohydrate %></td>

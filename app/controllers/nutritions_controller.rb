@@ -16,6 +16,12 @@ class NutritionsController < ApplicationController
     @nutritions = Nutrition.search(params[:keyword])
   end
 
+  def destroy
+    nutrition = Nutrition.find(params[:id])
+    nutrition.destroy
+    redirect_back fallback_location: root_path
+  end
+
 
 private
 

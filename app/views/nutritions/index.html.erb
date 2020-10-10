@@ -15,8 +15,16 @@
       </tr>
 
       <% @nutritions.each do |nutrition| %>
-        <tr height="40" class="content-post">
-          <td ><%= nutrition.ingredient %></td>
+        <tr height="60" class="content-post">
+          <td class="ingredient-culomn"><%= nutrition.ingredient %>
+            <div class="more">
+              <ul class="more-list">
+                <li>
+                  <%= link_to '削除', nutrition_path(nutrition.id), method: :delete, data: { confirm: '削除しますか？'} %>
+                </li>
+              </ul>
+            </div>
+          </td>
           <td><%= nutrition.protein %></td>
           <td><%= nutrition.lipid %></td>
           <td><%= nutrition.carbohydrate %></td>
