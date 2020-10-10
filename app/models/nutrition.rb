@@ -1,6 +1,9 @@
 class Nutrition < ApplicationRecord
-  extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :ingredient
-
-  validates :ingredient_id, numericality: { other_than: 0 }
+  with_options presence: true do
+    validates :ingredient
+    validates :calorie, numericality: { only_integer: true }
+    validates :protein, numericality: { only_integer: true }
+    validates :lipid, numericality: { only_integer: true }
+    validates :carbohydrate, numericality: { only_integer: true }
+  end
 end

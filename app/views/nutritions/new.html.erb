@@ -1,0 +1,16 @@
+<div class="background-image">
+  <div class="contents-new">
+      <div class="container">
+        <h3>食品を登録</h3>
+        <%= form_with(model: @nutrition, local: true) do |form| %>
+          <%= form.text_field :ingredient, placeholder: "食材名" %>
+          <%= form.text_field :calorie, placeholder: "カロリー" %>
+          <%= form.text_field :protein, placeholder: "タンパク質" %>
+          <%= form.text_field :lipid, placeholder: "脂質" %>
+          <%= form.text_field :carbohydrate, placeholder: "炭水化物" %>
+          <%= form.submit "登録" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

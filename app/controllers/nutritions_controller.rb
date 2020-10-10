@@ -1,14 +1,15 @@
 class NutritionsController < ApplicationController
 
   def index
-    @choice_one = Nutrition.find(1)
-    @choice_two = Nutrition.find(2)
-    @choice_three = Nutrition.find(3)
-    @choice_four = Nutrition.find(4)
+    @nutritions = Nutrition.all
   end
 
   def new
     @nutrition = Nutrition.new
+  end
+
+  def create
+    Nutrition.create(nutrition_params)
   end
 
   def show
@@ -18,5 +19,8 @@ class NutritionsController < ApplicationController
 
 private
 
+  def nutrition_params
+    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate)
+  end
 
 end

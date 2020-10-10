@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_08_035308) do
+ActiveRecord::Schema.define(version: 2020_10_10_004147) do
 
   create_table "nutritions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "ingredient_id"
+    t.string "ingredient"
     t.integer "calorie"
     t.integer "protein"
     t.integer "lipid"

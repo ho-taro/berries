@@ -1,11 +1,22 @@
-<div class='main'>
-  <div class='main-contents'>
-    <h2>食品選択</h2>
-    <p>今日は何を食べましたか？</p>
-    <input type="number" id="coice_one" value="">
-    <p>ライスのカロリーは<%= @choice_one.calorie %>です</p>
-    <p>野菜のカロリーは<%= @choice_two.calorie %>です</p>
-    <p>肉のカロリーは<%= @choice_three.calorie %>です</p>
-    <p>魚のカロリーは<%= @choice_four.calorie %>です</p>
-  </div>
+<div class='main-contents'>
+
+    <h1 class="contents-title">食品一覧</h1>
+    <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column">
+      <tr class="column-name">
+        <th width="30%" height="50">食品名</th>
+        <th width="15%">タンパク質</th>
+        <th width="15%">脂質</th>
+        <th width="15%">炭水化物</th>
+      </tr>
+
+      <% @nutritions.each do |nutrition| %>
+        <tr height="40" class="content-post">
+          <td ><%= nutrition.ingredient %></td>
+          <td><%= nutrition.protein %></td>
+          <td><%= nutrition.lipid %></td>
+          <td><%= nutrition.carbohydrate %></td>
+        </tr>
+      <% end %>
+    </table>
+
 </div>
