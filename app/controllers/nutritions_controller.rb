@@ -21,8 +21,8 @@ class NutritionsController < ApplicationController
   end
 
   def update
-    nutrition = Nutrition.find(params[:id])
-    nutrition.update(nutrition_params)
+    @nutrition = Nutrition.find(params[:id])
+    @nutrition.update(nutrition_params)
   end
 
   def destroy

@@ -1,0 +1,27 @@
+<div class="contents row">
+  <div class="success">
+    <h3>以下の内容に更新しました。</h3>
+  </div>
+</div>
+
+<div class='main-contents'>
+
+  <h1 class="contents-title"></h1>
+  <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column">
+    <tr class="column-name">
+      <th width="30%" height="50">食品名</th>
+      <th width="15%">タンパク質</th>
+      <th width="15%">脂質</th>
+      <th width="15%">炭水化物</th>
+    </tr>
+
+    <tr height="60" class="content-post">
+      <td class="ingredient-column" ><%= @nutrition.ingredient %></td>
+      <td><%= @nutrition.protein %></td>
+      <td><%= @nutrition.lipid %></td>
+      <td><%= @nutrition.carbohydrate %></td>
+    </tr>
+
+  </table>
+  <a class="btn" href="/">食品一覧へ戻る</a>
+</div>

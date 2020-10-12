@@ -22,6 +22,7 @@
             <div class="more" id="more">
               <ul class="more-list" id="more-list">
                 <li>
+                  <%= link_to '編集', edit_nutrition_path(nutrition.id), method: :get %> 
                   <%= link_to '削除', nutrition_path(nutrition.id), method: :delete, data: { confirm: '削除しますか？'} %>
                 </li>
               </ul>
