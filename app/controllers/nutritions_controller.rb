@@ -1,7 +1,7 @@
 class NutritionsController < ApplicationController
 
   def index
-    @nutritions = Nutrition.all
+    @nutritions = Nutrition.all.order(id: "DESC")
   end
 
   def new
@@ -14,6 +14,15 @@ class NutritionsController < ApplicationController
 
   def search
     @nutritions = Nutrition.search(params[:keyword])
+  end
+
+  def edit
+    @nutrition = Nutrition.find(params[:id])
+  end
+
+  def update
+    nutrition = Nutrition.find(params[:id])
+    nutrition.update(nutrition_params)
   end
 
   def destroy

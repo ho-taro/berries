@@ -3,6 +3,8 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 
+<script src="delete.js"></script>
+
 <div class='main-contents'>
 
     <h1 class="contents-title">食品一覧</h1>
@@ -16,9 +18,9 @@
 
       <% @nutritions.each do |nutrition| %>
         <tr height="60" class="content-post">
-          <td class="ingredient-culomn"><%= nutrition.ingredient %>
-            <div class="more">
-              <ul class="more-list">
+          <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
+            <div class="more" id="more">
+              <ul class="more-list" id="more-list">
                 <li>
                   <%= link_to '削除', nutrition_path(nutrition.id), method: :delete, data: { confirm: '削除しますか？'} %>
                 </li>

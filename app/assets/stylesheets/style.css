@@ -866,7 +866,7 @@ header.header .user_nav ul li a {
 .contents-title {
   margin: 20px;
   font-size: xx-large;
-  
+
 }
 
 .contents-column {
@@ -883,7 +883,7 @@ header.header .user_nav ul li a {
 .content-post {
   background-color: white;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  
+
 }
 
 .contents-row {
@@ -1048,12 +1048,18 @@ div.contents.row .success h3 {
 
 /*deleteアクション*/
 
-.ingredient-culomn {
+.ingredient-column {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .more {
+  
+}
+
+.more-list{
+  display: none;
 }
 
 form input,
