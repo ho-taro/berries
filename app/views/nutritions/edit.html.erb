@@ -3,11 +3,32 @@
       <div class="container">
         <h3>食品を編集</h3>
         <%= form_with(model: @nutrition, local: true) do |form| %>
-          <%= form.text_field :ingredient, placeholder: "食材名" %>
-          <%= form.text_field :calorie, placeholder: "カロリー" %>
-          <%= form.text_field :protein, placeholder: "タンパク質" %>
-          <%= form.text_field :lipid, placeholder: "脂質" %>
-          <%= form.text_field :carbohydrate, placeholder: "炭水化物" %>
+          <h4>食品名</h4>
+          <%= form.text_field :ingredient, placeholder: "食品名" %>
+          <h4>カロリー  ( kcal )</h4>
+          <%= form.text_field :calorie, placeholder: "カロリー  ( kcal )" %>
+          <h4>タンパク質  ( g )</h4>
+          <%= form.text_field :protein, placeholder: "タンパク質  ( g )" %>
+          <h4>脂質  ( g )</h4>
+          <%= form.text_field :lipid, placeholder: "脂質  ( g )" %>
+          <h4>炭水化物  ( g )</h4>
+          <%= form.text_field :carbohydrate, placeholder: "炭水化物  ( g )" %>
+          <h4>カリウム  ( mg )</h4>
+          <%= form.text_field :potassium, placeholder: "カリウム  ( mg )" %>
+          <h4>カルシウム  ( mg )</h4>
+          <%= form.text_field :calcium, placeholder: "カルシウム  ( mg )" %>
+          <h4>鉄  ( mg )</h4>
+          <%= form.text_field :iron, placeholder: "鉄  ( mg )" %>
+          <h4>ビタミンA  ( mg )</h4>
+          <%= form.text_field :vitamin_a, placeholder: "ビタミンA  ( mg )" %>
+          <h4>ビタミンB1  ( mg )</h4>
+          <%= form.text_field :vitamin_b1, placeholder: "ビタミンB1  ( mg )" %>
+          <h4>ビタミンB2  ( mg )</h4>
+          <%= form.text_field :vitamin_b2, placeholder: "ビタミンB2  ( mg )" %>
+          <h4>ビタミンC  ( mg )</h4>
+          <%= form.text_field :vitamin_c, placeholder: "ビタミンC  ( mg )" %>
+          <h4>食塩相当量  ( g )</h4>
+          <%= form.text_field :salt_equivalent, placeholder: "食塩相当量  ( g )" %>
           <%= form.submit "更新" %>
         <% end %>
       </div>

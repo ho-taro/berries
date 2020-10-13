@@ -1,4 +1,6 @@
 class NutritionsController < ApplicationController
+  before_action :move_to_index, except: [:index]
+  before_action :set_nutrition, only: [:edit, :update]
 
   def index
     @nutritions = Nutrition.all.order(id: "DESC")
@@ -17,11 +19,9 @@ class NutritionsController < ApplicationController
   end
 
   def edit
-    @nutrition = Nutrition.find(params[:id])
   end
 
   def update
-    @nutrition = Nutrition.find(params[:id])
     @nutrition.update(nutrition_params)
   end
 
@@ -34,8 +34,18 @@ class NutritionsController < ApplicationController
 
 private
 
+  def set_nutrition
+    @nutrition = Nutrition.find(params[:id])
+  end
+
   def nutrition_params
-    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate)
+    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate, :potassium, :calcium, :iron, :vitamin_a, :vitamin_b1, :vitamin_b2, :vitamin_c, :salt_equivalent)
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 
 end

@@ -877,7 +877,18 @@ header.header .user_nav ul li a {
   background-color: rgb(118, 53, 124);
   color: #f0f0f0;
   border: solid 1px white;
+}
 
+.column-color1 {
+  background-color: rgb(151, 71, 39);
+}
+
+.column-color2 {
+  background-color: rgb(67, 153, 149);
+}
+
+.column-color3 {
+  background-color: rgb(81, 151, 96);
 }
 
 .content-post {
@@ -1171,3 +1182,4 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+

@@ -5,6 +5,14 @@ class Nutrition < ApplicationRecord
     validates :protein, numericality: { only_integer: true }
     validates :lipid, numericality: { only_integer: true }
     validates :carbohydrate, numericality: { only_integer: true }
+    validates :potassium, numericality: { only_integer: true }
+    validates :calcium, numericality: { only_integer: true }
+    validates :iron, numericality: { only_integer: true }
+    validates :vitamin_a, numericality: { only_integer: true }
+    validates :vitamin_b1, numericality: { only_integer: true }
+    validates :vitamin_b2, numericality: { only_integer: true }
+    validates :vitamin_c, numericality: { only_integer: true }
+    validates :salt_equivalent, numericality: { only_integer: true }
   end
 
   def self.search(search)
