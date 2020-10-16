@@ -6,5 +6,16 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    member do #本一覧画面からお気に入り登録をする
+      post "add", to: "favorites#create"
+    end
+
+    resources :favorites, only: [:destroy]
   end
+
+  resources :users do
+    resources :favorites, only: [:show, :create]
+  end
+
+  #resources :favorites, only: [:destroy]
 end

@@ -1062,7 +1062,6 @@ div.contents.row .success h3 {
 .ingredient-column {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .more {
@@ -1071,6 +1070,11 @@ div.contents.row .success h3 {
 
 .more-list{
   display: none;
+}
+
+.post-user {
+  border: initial;
+  background-color: initial;
 }
 
 form input,

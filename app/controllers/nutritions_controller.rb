@@ -3,7 +3,7 @@ class NutritionsController < ApplicationController
   before_action :set_nutrition, only: [:edit, :update]
 
   def index
-    @nutritions = Nutrition.all.order(id: "DESC")
+    @nutritions = Nutrition.includes(:user).order("nutritions.id DESC")
   end
 
   def new
@@ -39,7 +39,7 @@ private
   end
 
   def nutrition_params
-    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate, :potassium, :calcium, :iron, :vitamin_a, :vitamin_b1, :vitamin_b2, :vitamin_c, :salt_equivalent)
+    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate, :potassium, :calcium, :iron, :vitamin_a, :vitamin_b1, :vitamin_b2, :vitamin_c, :salt_equivalent).merge(user_id: current_user.id)
   end
 
   def move_to_index

@@ -1,4 +1,8 @@
 class Nutrition < ApplicationRecord
+  belongs_to :user
+  has_many :favorites, foreign_key: true, dependent: :destroy
+  has_many :fav_users, through: :favorites, source: :user
+
   with_options presence: true do
     validates :ingredient
     validates :calorie, numericality: { only_integer: true }
