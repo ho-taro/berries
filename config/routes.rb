@@ -10,12 +10,12 @@ Rails.application.routes.draw do
       post "add", to: "favorites#create"
     end
 
-    resources :favorites, only: [:destroy]
+    resource :favorites, only: [:destroy]
   end
 
   resources :users do
     resources :favorites, only: [:show, :create]
   end
 
-  #resources :favorites, only: [:destroy]
+  #resource :favorites, only: [:destroy]
 end

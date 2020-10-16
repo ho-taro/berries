@@ -28,23 +28,39 @@
 
       <% @nutritions.each do |nutrition| %>
         <tr height="60" class="content-post">
-          <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
+          <% if current_user.already_favorited?(nutrition) %>
+            <td class="ingredient-column fav-color" id="ingredient-column" fontcolor="#882d91"><%= nutrition.ingredient %>
+          <% else %>
+            <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
+          <% end %>
             <div class="more" id="more">
               <ul class="more-list" id="more-list">
                 <li>
-
-
-
                   <% if current_user.already_favorited?(nutrition) %>
-                    <%= link_to '解除', nutrition_favorite_path(user_id:current_user.id, nutrition_id:nutrition.id, id:7), method: :delete %>
+                    <%# 解除の引数としてid:0を渡しているがこれが無いとidがないというエラーが起きてしまうので応急処置 %>
+                    <%= link_to '解除', nutrition_favorites_path(user_id:current_user.id, nutrition_id:nutrition.id, id:0), method: :delete %>
                   <% else %>
-                    <%= link_to '登録', edit_nutrition_path(nutrition.id), method: :get %>
+                    <%= link_to '登録', user_favorites_path(user_id:current_user.id, nutrition_id:nutrition.id), method: :post %>
                   <% end %>
+                    <%= link_to '編集', edit_nutrition_path(nutrition.id), method: :get %>
 
 
 
-                  <%= link_to '編集', edit_nutrition_path(nutrition.id), method: :get %>
+
+
+
+
                   <%= link_to '削除', nutrition_path(nutrition.id), method: :delete, data: { confirm: '削除しますか？'} %>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 </li>
               </ul>
             </div>

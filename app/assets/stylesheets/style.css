@@ -1064,8 +1064,12 @@ div.contents.row .success h3 {
   justify-content: space-between;
 }
 
+.fav-color {
+  color: red;
+}
+
 .more {
-  
+
 }
 
 .more-list{
