@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :favorites, foreign_key: true, dependent: :destroy
   has_many :fav_nutritions, through: :favorites, source: :nutrition
 
-  def already_favorited?(nutrition)
-    Favorite.exists?(nutrition_id: nutrition.id)
+  def already_favorited?(nutrition, current_user)
+    Favorite.exists?(user_id: current_user.id, nutrition_id: nutrition.id)
   end
 end

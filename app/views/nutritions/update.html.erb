@@ -10,16 +10,36 @@
   <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column">
     <tr class="column-name">
       <th width="30%" height="50">食品名</th>
-      <th width="15%">タンパク質</th>
-      <th width="15%">脂質</th>
-      <th width="15%">炭水化物</th>
+        <th class="column-color1" width="15%">エネルギー(kcal)</th>
+        <th class="column-color1" width="15%">タンパク質(g)</th>
+        <th class="column-color1" width="15%">脂質(g)</th>
+        <th class="column-color1" width="15%">炭水化物(g)</th>
+        <th class="column-color2" width="15%">カリウム(mg)</th>
+        <th class="column-color2" width="15%">カルシウム(mg)</th>
+        <th class="column-color2" width="15%">鉄(mg)</th>
+        <th class="column-color3" width="15%">ビタミンA(mg)</th>
+        <th class="column-color3" width="15%">ビタミンB1(mg)</th>
+        <th class="column-color3" width="15%">ビタミンB2(mg)</th>
+        <th class="column-color3" width="15%">ビタミンC(mg)</th>
+        <th width="15%">食塩相当量(g)</th>
+        <th width="15%">登録ユーザー</th>
     </tr>
 
     <tr height="60" class="content-post">
       <td class="ingredient-column" ><%= @nutrition.ingredient %></td>
-      <td><%= @nutrition.protein %></td>
-      <td><%= @nutrition.lipid %></td>
-      <td><%= @nutrition.carbohydrate %></td>
+      <td><%= @nutrition.calorie %></td>
+        <td><%= @nutrition.protein %></td>
+        <td><%= @nutrition.lipid %></td>
+        <td><%= @nutrition.carbohydrate %></td>
+        <td><%= @nutrition.potassium %></td>
+        <td><%= @nutrition.calcium %></td>
+        <td><%= @nutrition.iron %></td>
+        <td><%= @nutrition.vitamin_a %></td>
+        <td><%= @nutrition.vitamin_b1 %></td>
+        <td><%= @nutrition.vitamin_b2 %></td>
+        <td><%= @nutrition.vitamin_c %></td>
+        <td><%= @nutrition.salt_equivalent %></td>
+        <td><%= @nutrition.user.nickname %></td>
     </tr>
 
   </table>
