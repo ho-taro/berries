@@ -1,7 +1,7 @@
 class FavoritesController < ApplicationController
 
   def show
-    @nutritions = current_user.nutritions
+    @nutritions = Nutrition.includes(:user).order("nutritions.id DESC")
     @user = User.find(params[:id])
     @favorites = Favorite.where("user_id = ?", @user)
   end

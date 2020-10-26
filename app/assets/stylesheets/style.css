@@ -116,7 +116,7 @@ strong {
 /*
  * Address styling not present in Safari 5 and Chrome. */
 dfn {
-  font-style: italic;
+  font-style: normal;
 }
 
 /*
@@ -652,8 +652,8 @@ body {
   line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
-  color: #666;
-  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  /*color: #666;*/
+  /*font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;*/
   margin: 0;
 }
 
@@ -664,7 +664,7 @@ a {
 }
 
 a:hover {
-  color: #57C3E9;
+  color: #ff4eff;
 }
 
 .bold {
@@ -710,15 +710,15 @@ header.header div.header__bar.row div.grid-6 a.post {
   color: whitesmoke;
   font-weight: bold;
   text-align: center;
-  border-radius: 3px;
+  border: outset; 3px;
   display: inline-block;
   background-color: #882d91;
 }
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #9bdbf2;
-  color: #9bdbf2;
+  border-color: #ff4eff;
+  color: #ff4eff;
 }
 
 .title {
@@ -731,7 +731,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 }
 
 .title--big i {
-  font-style: italic;
+  font-style: normal;
   font-size: 1.8em;
 }
 
@@ -768,7 +768,7 @@ header.header div.header__bar.row div.grid-6 {
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
-  width: 120px;
+  /*width: 120px;*/
   display: inline-left;
   margin-left: 10px;
 }
@@ -1060,7 +1060,6 @@ div.contents.row .success h3 {
 /*deleteアクション*/
 
 .ingredient-column {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -1087,22 +1086,20 @@ form textarea {
   margin: 5px 0 15px;
   padding: 10px;
   border: 1px solid #D8D8D8;
-  border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
 }
 
 
-/*登録ボタンの色*/
+/*Searchボタンの色*/
 form input[type="submit"] {
   background-color: #882d91;
-  border-radius: 20px;
+  border: double; 20px;
   color: #fff;
-  border: 0;
   font-size: 18px;
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #ff4eff;
 }
 
 /*newアクション*/
@@ -1114,7 +1111,7 @@ form input[type="submit"]:hover {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 660px;
-  
+
 }
 
 .background-image {
@@ -1191,3 +1188,6 @@ footer p {
   width: 10%;
 }
 
+.favorite-btn {
+  font-size: xx-large;
+}

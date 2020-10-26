@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_14_023416) do
+ActiveRecord::Schema.define(version: 2020_10_19_081416) do
 
   create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
@@ -23,20 +23,20 @@ ActiveRecord::Schema.define(version: 2020_10_14_023416) do
 
   create_table "nutritions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "ingredient"
-    t.integer "calorie"
-    t.integer "protein"
-    t.integer "lipid"
-    t.integer "carbohydrate"
+    t.float "calorie"
+    t.float "protein"
+    t.float "lipid"
+    t.float "carbohydrate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "potassium"
-    t.integer "calcium"
-    t.integer "iron"
-    t.integer "vitamin_a"
-    t.integer "vitamin_b1"
-    t.integer "vitamin_b2"
-    t.integer "vitamin_c"
-    t.integer "salt_equivalent"
+    t.float "potassium"
+    t.float "calcium"
+    t.float "iron"
+    t.float "vitamin_a"
+    t.float "vitamin_b1"
+    t.float "vitamin_b2"
+    t.float "vitamin_c"
+    t.float "dietary_fiber"
     t.integer "user_id"
   end
 

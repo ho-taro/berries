@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :favorites, only: [:show, :create]
+    collection do
+      get :favorites
+    end
   end
 
 end

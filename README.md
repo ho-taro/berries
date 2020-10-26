@@ -5,20 +5,54 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Ruby version
 
-* System dependencies
+- System dependencies
 
-* Configuration
+- Configuration
 
-* Database creation
+- Database creation
 
-* Database initialization
+- Database initialization
 
-* How to run the test suite
+- How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+- Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+- Deployment instructions
 
-* ...
+- ...
+
+ユーザー登録機能
+ユーザー登録をすることで各機能を利用可能とする
+Sign Up ボタンから必要情報を入力し users テーブルに保存する
+ヘッダーの右部分にある SignUp ボタンを押す
+必要情報を入力し、Signup ボタンを押し登録完了"
+
+食品登録機能
+ユーザーがよく利用する食品を登録し、保存することができる
+食品登録ボタンから食品を登録し、nutritions テーブルに保存する
+ヘッダーの右部分にある食品登録ボタンを押す
+必要情報を入力し、登録ボタンを押し登録完了
+
+食品一覧表示機能
+各ユーザーが登録した食品をトップページに一覧で表示する
+各ユーザーが登録した食品の栄養素をトップページにて一覧で見ることができる
+トップページで一覧を確認
+
+食品検索機能 ユーザーが任意の食品を簡単に検索するようにする 任意の食品名を検索し、各ユーザーが登録した食品の中から当てはまる食品を探すことができる "・画面中央の検索ボックスに任意の食品名を入力する
+右にある Search ボタンを押すと、検索結果が表示される"
+
+食品編集機能 ユーザーが自身が登録した食品の情報を登録後に編集できるようにする 自身が登録した食品の栄養素の数値を変更できる "・ユーザー自身が登録した食品名にマウスを乗せると編集ボタンが表示される
+・編集ボタンを押す
+・画面遷移したら編集したい項目に数値を入力し、更新ボタンを押す"
+
+食品削除機能 ユーザーが自身が登録した食品を削除できるようにする ユーザーが自身が登録した食品を削除ボタンを押すことによって nutritions テーブルから削除する "・ユーザー自身が登録した食品名にマウスを乗せると編集ボタンが表示される
+・削除ボタンを押す
+
+・アラートが表示されるので OK ボタンを押す"
+
+お気に入り登録機能 ユーザーが気に入った食品を登録し、マイページで一覧で確認できるようする。解除も可能 ユーザーがトップページに表示されている食品から登録したい食品があれば登録することで favorites テーブルに保存され、食品名が赤字になる。マイページにて登録一覧を表示できる。解除するとデータは削除される "・食品名にマウスを乗せると登録ボタンが表示される
+・登録ボタンを押す
+・画面がリロードされ、食品名に ★ がつき、文字が赤くなる
+・以降、登録ボタンが解除ボタンに変わり、いつでも解除できる"

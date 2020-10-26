@@ -7,6 +7,6 @@ class AddColumnNutritions < ActiveRecord::Migration[6.0]
     add_column :nutritions, :vitamin_b1, :integer
     add_column :nutritions, :vitamin_b2, :integer
     add_column :nutritions, :vitamin_c, :integer
-    add_column :nutritions, :salt_equivalent, :integer
+    add_column :nutritions, :dietary_fiber, :integer
   end
 end

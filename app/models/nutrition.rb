@@ -3,20 +3,22 @@ class Nutrition < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :fav_users, through: :favorites, source: :user
 
+  NUTRITION_CODE_REGEX = /\A[-]?[0-9]+(\.[0-9]+)?\z/.freeze
+
   with_options presence: true do
     validates :ingredient
-    validates :calorie, numericality: { only_integer: true }
-    validates :protein, numericality: { only_integer: true }
-    validates :lipid, numericality: { only_integer: true }
-    validates :carbohydrate, numericality: { only_integer: true }
-    validates :potassium, numericality: { only_integer: true }
-    validates :calcium, numericality: { only_integer: true }
-    validates :iron, numericality: { only_integer: true }
-    validates :vitamin_a, numericality: { only_integer: true }
-    validates :vitamin_b1, numericality: { only_integer: true }
-    validates :vitamin_b2, numericality: { only_integer: true }
-    validates :vitamin_c, numericality: { only_integer: true }
-    validates :salt_equivalent, numericality: { only_integer: true }
+    validates :calorie, format: { with: NUTRITION_CODE_REGEX }
+    validates :protein, format: { with: NUTRITION_CODE_REGEX }
+    validates :lipid, format: { with: NUTRITION_CODE_REGEX }
+    validates :carbohydrate, format: { with: NUTRITION_CODE_REGEX }
+    validates :potassium, format: { with: NUTRITION_CODE_REGEX }
+    validates :calcium, format: { with: NUTRITION_CODE_REGEX }
+    validates :iron, format: { with: NUTRITION_CODE_REGEX }
+    validates :vitamin_a, format: { with: NUTRITION_CODE_REGEX }
+    validates :vitamin_b1, format: { with: NUTRITION_CODE_REGEX }
+    validates :vitamin_b2, format: { with: NUTRITION_CODE_REGEX }
+    validates :vitamin_c, format: { with: NUTRITION_CODE_REGEX }
+    validates :dietary_fiber, format: { with: NUTRITION_CODE_REGEX }
   end
 
   def self.search(search)

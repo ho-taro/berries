@@ -38,7 +38,7 @@ private
   end
 
   def nutrition_params
-    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate, :potassium, :calcium, :iron, :vitamin_a, :vitamin_b1, :vitamin_b2, :vitamin_c, :salt_equivalent).merge(user_id: current_user.id)
+    params.require(:nutrition).permit(:ingredient, :calorie, :protein, :lipid, :carbohydrate, :potassium, :calcium, :iron, :vitamin_a, :vitamin_b1, :vitamin_b2, :vitamin_c, :dietary_fiber).merge(user_id: current_user.id)
   end
 
   def move_to_index

@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :nutritions
-  has_many :favorites, foreign_key: true, dependent: :destroy
+  has_many :favorites, dependent: :destroy
   has_many :fav_nutritions, through: :favorites, source: :nutrition
 
   def already_favorited?(nutrition, current_user)
