@@ -710,7 +710,7 @@ header.header div.header__bar.row div.grid-6 a.post {
   color: whitesmoke;
   font-weight: bold;
   text-align: center;
-  border: outset; 3px;
+  border: outset 3px;
   display: inline-block;
   background-color: #882d91;
 }
