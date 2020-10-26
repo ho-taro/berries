@@ -3,7 +3,7 @@ class NutritionsController < ApplicationController
   before_action :set_nutrition, only: [:edit, :update]
 
   def index
-    @nutritions = Nutrition.includes(:user).order("nutritions.id DESC")
+    @nutritions = Nutrition.includes(:user).order('nutritions.id DESC')
   end
 
   def new
@@ -31,7 +31,7 @@ class NutritionsController < ApplicationController
     redirect_back fallback_location: root_path
   end
 
-private
+  private
 
   def set_nutrition
     @nutrition = Nutrition.find(params[:id])
@@ -42,9 +42,6 @@ private
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in?
   end
-
 end

@@ -3,7 +3,7 @@ class Nutrition < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :fav_users, through: :favorites, source: :user
 
-  NUTRITION_CODE_REGEX = /\A[-]?[0-9]+(\.[0-9]+)?\z/.freeze
+  NUTRITION_CODE_REGEX = /\A-][0-9]+(\.[0-9]+)?\z/.freeze
 
   with_options presence: true do
     validates :ingredient
@@ -22,7 +22,7 @@ class Nutrition < ApplicationRecord
   end
 
   def self.search(search)
-    if search != ""
+    if search != ''
       Nutrition.where('ingredient LIKE(?)', "%#{search}%")
     else
       Nutrition.all

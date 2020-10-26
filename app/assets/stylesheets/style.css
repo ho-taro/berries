@@ -130,7 +130,6 @@ hr {
 /*
  * Address styling not present in IE 8/9. */
 
-
 /*
  * Correct font family set oddly in Safari 5 and Chrome. */
 code,
@@ -150,7 +149,7 @@ pre {
 /*
  * Set consistent quote types. */
 q {
-  quotes: "“""”""‘""’";
+  quotes: "“" "”" "‘" "’";
 }
 
 /*
@@ -443,9 +442,21 @@ i {
 }
 
 .button {
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 ul {
@@ -544,8 +555,8 @@ ul li {
   clear: both;
 }
 
-.row.collapse>.column,
-.row.collapse>.columns {
+.row.collapse > .column,
+.row.collapse > .columns {
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -595,7 +606,6 @@ ul li {
 }
 
 @media only screen and (max-width: 40em) {
-
   .row {
     width: 100%;
     padding: 0 20px !important;
@@ -622,7 +632,6 @@ ul li {
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
   .row .grid-1,
   .row .grid-2,
   .row .grid-3,
@@ -673,7 +682,7 @@ a:hover {
 
 .serif,
 div.contents.row div.content_post p {
-  font-family: 'ほのか明朝', serif;
+  font-family: "ほのか明朝", serif;
 }
 
 .ultra {
@@ -681,7 +690,7 @@ div.contents.row div.content_post p {
 }
 
 ::selection {
-  background: #D8D8D8;
+  background: #d8d8d8;
 }
 
 .transition,
@@ -738,8 +747,8 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 /*ヘッダーのバックグラウンドカラー部分*/
 header.header {
   padding: 10px;
-  border-bottom: 1px solid #D8D8D8;
-  background-color:#CC99FF;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #cc99ff;
   position: fixed;
   top: 0;
   left: 0;
@@ -792,13 +801,13 @@ header.header .user_nav span {
 }
 
 header.header .user_nav span:after {
-  content: '▼';
-  font-size: .7em;
+  content: "▼";
+  font-size: 0.7em;
   margin-left: -4px;
 }
 
 header.header .user_nav span:hover ul {
-  color: #57C3E9;
+  color: #57c3e9;
   display: block;
 }
 
@@ -850,8 +859,8 @@ header.header .user_nav ul li a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color:rgba(255,255,255,0.6);
-	background-blend-mode:lighten;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -859,14 +868,13 @@ header.header .user_nav ul li a {
 }
 
 .bg-opacity {
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, 0.5);
   height: 100%;
 }
 
 .contents-title {
   margin: 20px;
   font-size: xx-large;
-
 }
 
 .contents-column {
@@ -894,7 +902,6 @@ header.header .user_nav ul li a {
 .content-post {
   background-color: white;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-
 }
 
 .contents-row {
@@ -911,8 +918,6 @@ header.header .user_nav ul li a {
 .btn {
   margin: 20px;
 }
-
-
 
 /*
 div.contents.row h2 {
@@ -1068,10 +1073,9 @@ div.contents.row .success h3 {
 }
 
 .more {
-
 }
 
-.more-list{
+.more-list {
   display: none;
 }
 
@@ -1085,10 +1089,9 @@ form textarea {
   width: 100%;
   margin: 5px 0 15px;
   padding: 10px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   font-family: "游ゴシック", "YuGothic";
 }
-
 
 /*Searchボタンの色*/
 form input[type="submit"] {
@@ -1111,7 +1114,6 @@ form input[type="submit"]:hover {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 660px;
-
 }
 
 .background-image {
@@ -1119,8 +1121,8 @@ form input[type="submit"]:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color:rgba(255,255,255,0.6);
-	background-blend-mode:lighten;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
 }
 
 .container {
@@ -1145,7 +1147,7 @@ form input[type="submit"]:hover {
 }
 
 .comments a {
-  color: :#CC99FF;
+  color: #cc99ff;
 }
 
 .comments a:hover {
@@ -1163,7 +1165,7 @@ form input[type="submit"]:hover {
 footer {
   margin: 30px auto;
   padding: 10px;
-  color: #D8D8D8;
+  color: #d8d8d8;
   display: flex;
   justify-content: center;
   align-items: center;
