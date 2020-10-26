@@ -1093,7 +1093,7 @@ form textarea {
 /*Searchボタンの色*/
 form input[type="submit"] {
   background-color: #882d91;
-  border: double; 20px;
+  border: double 20px;
   color: #fff;
   font-size: 18px;
 }
