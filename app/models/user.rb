@@ -7,6 +7,8 @@ class User < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :fav_nutritions, through: :favorites, source: :nutrition
 
+  validates :nickname, presence: true, length: { maximum: 8 }
+
   def already_favorited?(nutrition, current_user)
     Favorite.exists?(user_id: current_user.id, nutrition_id: nutrition.id)
   end

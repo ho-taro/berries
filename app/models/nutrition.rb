@@ -3,7 +3,8 @@ class Nutrition < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :fav_users, through: :favorites, source: :user
 
-  NUTRITION_CODE_REGEX = /\A-][0-9]+(\.[0-9]+)?\z/.freeze
+  #半角数字、小数点
+  NUTRITION_CODE_REGEX = /\A[-]?[0-9]+(\.[0-9]+)?\z/.freeze
 
   with_options presence: true do
     validates :ingredient
