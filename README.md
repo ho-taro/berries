@@ -2,10 +2,11 @@
 
 普段食べている食品の栄養素を管理することができるアプリです。<br>
 任意で食品と数値を入力できるのでオリジナル性の高さが特徴となります。<br>
-![スクリーンショット 2020-10-29 16 42 53](https://user-images.githubusercontent.com/70525516/97539735-d673bd00-1a05-11eb-9314-b46992b9b97d.png)<br>
 【トップページ】<br>
+![スクリーンショット 2020-10-29 16 42 53](https://user-images.githubusercontent.com/70525516/97539735-d673bd00-1a05-11eb-9314-b46992b9b97d.png)<br>
+<br>
+【食品登録画面】<br>
 ![スクリーンショット 2020-10-29 17 20 17](https://user-images.githubusercontent.com/70525516/97543080-138e7e00-1a0b-11eb-903f-c624809080dd.png)<br>
-【食品登録画面】
 
 # URL
 
