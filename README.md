@@ -11,17 +11,17 @@
 
 https://berries-29681.herokuapp.com/ <br>
 
-Basic 認証<br>
+**Basic 認証**<br>
 ユーザー名：hosoda<br>
 パスワード：5132<br>
 
-テストユーザー<br>
+**テストユーザー**<br>
 Email：test@berries<br>
 Password：berries1<br>
 
 # 使用技術
 
-・使用言語<br>
+**使用言語**<br>
 Ruby on Rails<br>
 &ensp;devise<br>
 &ensp;Rspec<br>
@@ -30,10 +30,10 @@ Ruby on Rails<br>
 JavaScript<br>
 HTML/CSS<br>
 
-・デプロイ方法<br>
+**デプロイ方法**<br>
 Heroku<br>
 
-開発環境<br>
+**開発環境**<br>
 Vsual Studio code<br>
 GitHub<br>
 
