@@ -1,58 +1,178 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Name（リポジトリ/プロジェクト/OSSなどの名前）
 
-Things you may want to cover:
+分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
 
-- Ruby version
+"hoge"が何かを簡潔に紹介する
 
-- System dependencies
+# DEMO
 
-- Configuration
+"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
 
-- Database creation
+# Features
 
-- Database initialization
+"hoge"のセールスポイントや差別化などを説明する
 
-- How to run the test suite
+# Requirement
 
-- Services (job queues, cache servers, search engines, etc.)
+"hoge"を動かすのに必要なライブラリなどを列挙する
 
-- Deployment instructions
+* huga 3.5.2
+* hogehuga 1.0.2
 
-- ...
+# Installation
 
-ユーザー登録機能
-ユーザー登録をすることで各機能を利用可能とする
-Sign Up ボタンから必要情報を入力し users テーブルに保存する
-ヘッダーの右部分にある SignUp ボタンを押す
-必要情報を入力し、Signup ボタンを押し登録完了"
+Requirementで列挙したライブラリなどのインストール方法を説明する
 
-食品登録機能
-ユーザーがよく利用する食品を登録し、保存することができる
-食品登録ボタンから食品を登録し、nutritions テーブルに保存する
-ヘッダーの右部分にある食品登録ボタンを押す
-必要情報を入力し、登録ボタンを押し登録完了
+```bash
+pip install huga_package
+```
 
-食品一覧表示機能
-各ユーザーが登録した食品をトップページに一覧で表示する
-各ユーザーが登録した食品の栄養素をトップページにて一覧で見ることができる
-トップページで一覧を確認
+# Usage
 
-食品検索機能 ユーザーが任意の食品を簡単に検索するようにする 任意の食品名を検索し、各ユーザーが登録した食品の中から当てはまる食品を探すことができる "・画面中央の検索ボックスに任意の食品名を入力する
-右にある Search ボタンを押すと、検索結果が表示される"
+DEMOの実行方法など、"hoge"の基本的な使い方を説明する
 
-食品編集機能 ユーザーが自身が登録した食品の情報を登録後に編集できるようにする 自身が登録した食品の栄養素の数値を変更できる "・ユーザー自身が登録した食品名にマウスを乗せると編集ボタンが表示される
-・編集ボタンを押す
-・画面遷移したら編集したい項目に数値を入力し、更新ボタンを押す"
+```bash
+git clone https://github.com/hoge/~
+cd examples
+python demo.py
+```
 
-食品削除機能 ユーザーが自身が登録した食品を削除できるようにする ユーザーが自身が登録した食品を削除ボタンを押すことによって nutritions テーブルから削除する "・ユーザー自身が登録した食品名にマウスを乗せると編集ボタンが表示される
-・削除ボタンを押す
+# Note
 
-・アラートが表示されるので OK ボタンを押す"
+注意点などがあれば書く
 
-お気に入り登録機能 ユーザーが気に入った食品を登録し、マイページで一覧で確認できるようする。解除も可能 ユーザーがトップページに表示されている食品から登録したい食品があれば登録することで favorites テーブルに保存され、食品名が赤字になる。マイページにて登録一覧を表示できる。解除するとデータは削除される "・食品名にマウスを乗せると登録ボタンが表示される
-・登録ボタンを押す
-・画面がリロードされ、食品名に ★ がつき、文字が赤くなる
-・以降、登録ボタンが解除ボタンに変わり、いつでも解除できる"
+# Author
+
+作成情報を列挙する
+
+* 作成者
+* 所属
+* E-mail
+
+# License
+ライセンスを明示する
+
+"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+
+社内向けなら社外秘であることを明示してる
+
+"hoge" is Confidential.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+# Name（リポジトリ/プロジェクト/OSSなどの名前）
+ 
+分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+ 
+"hoge"が何かを簡潔に紹介する
+ 
+# DEMO
+ 
+"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+ 
+# Features
+ 
+"hoge"のセールスポイントや差別化などを説明する
+ 
+# Requirement
+ 
+"hoge"を動かすのに必要なライブラリなどを列挙する
+ 
+* huga 3.5.2
+* hogehuga 1.0.2
+ 
+# Installation
+ 
+Requirementで列挙したライブラリなどのインストール方法を説明する
+ 
+```bash
+pip install huga_package
+```
+ 
+# Usage
+ 
+DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+ 
+```bash
+git clone https://github.com/hoge/~
+cd examples
+python demo.py
+```
+ 
+# Note
+ 
+注意点などがあれば書く
+ 
+# Author
+ 
+作成情報を列挙する
+ 
+* 作成者
+* 所属
+* E-mail
+ 
+# License
+ライセンスを明示する
+ 
+"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+ 
+社内向けなら社外秘であることを明示してる
+ 
+"hoge" is Confidential.
