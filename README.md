@@ -3,8 +3,9 @@
 普段食べている食品の栄養素を管理することができるアプリです。<br>
 任意で食品と数値を入力できるのでオリジナル性の高さが特徴となります。<br>
 ![スクリーンショット 2020-10-29 16 42 53](https://user-images.githubusercontent.com/70525516/97539735-d673bd00-1a05-11eb-9314-b46992b9b97d.png)<br>
-![スクリーンショット 2020-10-29 16 54 44](https://user-images.githubusercontent.com/70525516/97540795-7ed65100-1a07-11eb-8e70-f5d1cfc65e82.png)
-最高です
+![スクリーンショット 2020-10-29 17 20 17](https://user-images.githubusercontent.com/70525516/97543080-138e7e00-1a0b-11eb-903f-c624809080dd.png)<br>
+食品登録画面
+
 # URL
 
 https://berries-29681.herokuapp.com/ <br>
