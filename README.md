@@ -1,12 +1,20 @@
 # Berries
 
 普段食べている食品の栄養素を管理することができるアプリです。<br>
-任意で食品と数値を入力できるのでオリジナル性の高さが特徴となります。
+任意で食品と数値を入力できるのでオリジナル性の高さが特徴となります。<br>
 ![スクリーンショット 2020-10-29 16 42 53](https://user-images.githubusercontent.com/70525516/97539735-d673bd00-1a05-11eb-9314-b46992b9b97d.png)
 
-# DEMO
+# URL
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+https://berries-29681.herokuapp.com/ <br>
+
+Basic 認証<br>
+ユーザー名：hosoda<br>
+パスワード：5132<br>
+
+テストユーザー<br>
+Email：test@berries<br>
+Password：berries1<br>
 
 # Features
 
