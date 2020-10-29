@@ -58,7 +58,7 @@ RSpec.describe Nutrition, type: :model do
         expect(@nutrition.errors.full_messages).to include("Iron can't be blank", "Iron is invalid")
       end
       it "ビタミンAがないと食品は保存できない" do
-        @nutrition.vitamin_a = ''
+        @nutrition.vitamin_a = '' #test
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Vitamin a can't be blank", "Vitamin a is invalid")
       end
