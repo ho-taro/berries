@@ -33,7 +33,8 @@ JavaScript<br>
 HTML/CSS<br>
 
 **デプロイ方法**<br>
-Heroku<br>
+EC2<br>
+Capistrano<br>
 
 **開発環境**<br>
 Vsual Studio code<br>
