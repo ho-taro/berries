@@ -42,7 +42,7 @@ AWS<br>
 &ensp;セキュリティ対策<br>
 &ensp;&ensp;・Authyを用いた２段階認証<br>
 &ensp;&ensp;・IAMユーザー<br>
-&ensp;&ensp;・git-secretsの利用<br>
+&ensp;&ensp;・git-secretsの利用（全てのリポジトリで適用）<br>
 
 - 作成者 細田翔太郎<br>
 - E-mail shotaro.hosoda.1921@gmail.com<br>
