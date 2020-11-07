@@ -855,7 +855,7 @@ header.header .user_nav ul li a {
 /*作業中（コンテンツ）*/
 
 .main-contents {
-  background-image: image-url("3825642_s.jpg");
+  background-image: url("3825642_s.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
