@@ -834,7 +834,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #d8d8d8;
-  background-color: #cc99ff;
+  background: linear-gradient(-135deg, #e4a972, #9941d8);
   position: fixed;
   top: 0;
   left: 0;
@@ -1182,7 +1182,7 @@ form {
 
   input[type="submit"] {
     background-color: #882d91;
-    border: double 20px;
+    border: 20px;
     color: #fff;
     font-size: 18px;
 
