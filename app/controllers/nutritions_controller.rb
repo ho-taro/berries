@@ -15,7 +15,7 @@ class NutritionsController < ApplicationController
   end
 
   def search
-    @nutritions = Nutrition.search(params[:keyword])
+    @nutritions = Nutrition.search(params[:keyword]).order('nutritions.id DESC')
   end
 
   def edit
