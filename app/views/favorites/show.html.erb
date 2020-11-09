@@ -65,45 +65,6 @@
           <td><%= nutrition.dietary_fiber %></td>
           <td><%= nutrition.user.nickname %></td>
         </tr>
-      <% elsif nutrition.ingredient == "さつまいも" %>
-        <tr height="60" class="content-post">
-          <%# サインインしているかつ、お気に入り登録している食品は★がつき、カラーは赤になる%>
-          <% if current_user.already_favorited?(nutrition, current_user) %>
-            <td class="ingredient-column fav-color" id="ingredient-column">★<%= nutrition.ingredient %>
-          <% else %>
-            <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
-          <% end %>
-          <div class="more" id="more">
-            <ul class="more-list" id="more-list">
-              <li>
-                <% if current_user.already_favorited?(nutrition, current_user) %>
-                  <%# 解除の引数としてid:0を渡しているがこれが無いとidがないというエラーが起きてしまうので応急処置 %>
-                  <%= link_to '解除', nutrition_favorites_path(user_id:current_user.id, nutrition_id:nutrition.id, id:0), :style=>"color:green;", method: :delete %>
-                <% else %>
-                  <%= link_to '登録', user_favorites_path(user_id:current_user.id, nutrition_id:nutrition.id), :style=>"color:green;", method: :post %>
-                <% end %>
-                <% if current_user.id == nutrition.user.id %>
-                  <%= link_to '編集', edit_nutrition_path(nutrition.id), :style=>"color:green;", method: :get %>
-                  <%= link_to '削除', nutrition_path(nutrition.id), :style=>"color:green;", method: :delete, data: { confirm: '削除しますか？'} %>
-                <% end %>
-              </li>
-            </ul>
-          </div>
-          <td><%= nutrition.calorie %></td>
-          <td><%= nutrition.protein %></td>
-          <td><%= nutrition.lipid %></td>
-          <td><%= nutrition.carbohydrate %></td>
-          <td><%= nutrition.potassium %></td>
-          <td><%= nutrition.calcium %></td>
-          <td><%= nutrition.iron %></td>
-          <td><%= nutrition.vitamin_a %></td>
-          <td><%= nutrition.vitamin_b1 %></td>
-          <td><%= nutrition.vitamin_b2 %></td>
-          <td><%= nutrition.vitamin_c %></td>
-          <td><%= nutrition.dietary_fiber %></td>
-          <td><%= nutrition.user.nickname %></td>
-        </tr>
-      <% end %>
     <% end %>
   </table>
 </div>
