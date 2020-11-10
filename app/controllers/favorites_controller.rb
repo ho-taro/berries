@@ -9,12 +9,12 @@ class FavoritesController < ApplicationController
     @user_id = current_user.id
     @nutrition_id = Nutrition.find(params[:nutrition_id])
     @favorite = Favorite.new(nutrition_id: @nutrition_id.id, user_id: @user_id)
-    redirect_to root_path if @favorite.save!
+    @favorite.save ? (redirect_to request.referer) : (redirect_to request.referer)
   end
 
   def destroy
     @favorite = Favorite.find_by(user_id: current_user.id, nutrition_id: params[:nutrition_id])
-    redirect_to root_path if @favorite.destroy
+    @favorite.destroy ? (redirect_to request.referer) : (redirect_to request.referer)
   end
 
   private
