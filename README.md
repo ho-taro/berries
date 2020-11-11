@@ -11,7 +11,7 @@
 
 # URL
 
-https://berries-29681.herokuapp.com/ <br>
+http://54.248.141.122/ <br>
 
 **Basic 認証**<br>
 ユーザー名：hosoda<br>
