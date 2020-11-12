@@ -10,7 +10,8 @@
 
 <br>
 【トップページ】<br>
-![スクリーンショット 2020-11-12 11 59 05](https://user-images.githubusercontent.com/70525516/98890057-7ccbc200-24de-11eb-943c-672a7b467087.png)<br>
+![992df095f95e493974a8a7953604a22b](https://user-images.githubusercontent.com/70525516/98890358-23b05e00-24df-11eb-93c2-7b3fb076cd96.png)
+
 <br>
 【食品登録画面】<br>
 ![スクリーンショット 2020-10-29 17 20 17](https://user-images.githubusercontent.com/70525516/97543080-138e7e00-1a0b-11eb-903f-c624809080dd.png)<br>
