@@ -1128,10 +1128,16 @@ footer {
   font-size: xx-large;
 }
 
+/*index*/
+
 .index-contents {
   display: flex; /* 子要素をflexboxで揃える */
   flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
   justify-content: center; /* 子要素をflexboxにより中央に配置する */
   align-items: center; /* 子要素をflexboxにより中央に配置する */
   background-color: #fff;
+}
+.index-image {
+  height: 70%;
+  width: 70%;
 }
