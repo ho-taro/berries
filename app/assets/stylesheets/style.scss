@@ -1112,7 +1112,7 @@ footer {
 
 .search-form {
   text-align: center;
-  padding-top: 32px;
+  padding: 10px 30px;
 
   .search-input {
     width: 30%;
@@ -1121,6 +1121,7 @@ footer {
 
   .search-btn {
     width: 7%;
+    border: outset 3px;
   }
 }
 
@@ -1131,11 +1132,29 @@ footer {
 /*index*/
 
 .index-contents {
+  background-image: image-url("index-back.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
   display: flex; /* 子要素をflexboxで揃える */
   flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
   justify-content: center; /* 子要素をflexboxにより中央に配置する */
   align-items: center; /* 子要素をflexboxにより中央に配置する */
-  background-color: #fff;
 }
 .index-image {
+}
+
+.index-new {
+  margin: 20px;
+}
+
+.index-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.new-btn {
+  border: outset 3px;
+  padding: 8px 20px;
+  background-color: #882d91;
+  color: #f0f0f0;
 }

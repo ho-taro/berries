@@ -1,18 +1,20 @@
 <div class="index-contents">
-<div>
-    <%= image_tag ('/index2.png'), class:"index-image"%>
+  <div class="index-image">
+    <%= image_tag ('/index3.jpg') %>
   </div>
+</div>
+<div class="index-text">
+  Beriiesは食材の各栄養素を管理できるアプリです。<br>
+  食材一覧からお好みの食材の栄養素をチェックしてみましょう。
 </div>
 
 
 <%= form_with(url: search_nutritions_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "ここから気になる食材名を検索！", class: "search-input" %>
+  <%= form.text_field :keyword, placeholder: "さっそく食材を検索しよう！", class: "search-input" %>
   <%= form.submit "Search", class: "search-btn" %>
-  <div>
-  検索しても無ければここから食材を登録しよう！
-  </div>
-  <div>
-  <%= link_to "食品登録", new_nutrition_path, class: "post" %>
+  <div>検索しても無ければここから食材を登録しよう！</div>
+  <div class="index-new">
+    <%= link_to "食品登録", new_nutrition_path, class: "new-btn" %>
   </div>
 <% end %>
 
