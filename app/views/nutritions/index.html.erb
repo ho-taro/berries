@@ -1,14 +1,19 @@
 <div class="index-contents">
-
 <div>
-<%= image_tag ('/index.png'), class:"index-image"%>
-</div>
+    <%= image_tag ('/index2.png'), class:"index-image"%>
+  </div>
 </div>
 
 
 <%= form_with(url: search_nutritions_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "食品名を入力", class: "search-input" %>
+  <%= form.text_field :keyword, placeholder: "ここから気になる食材名を検索！", class: "search-input" %>
   <%= form.submit "Search", class: "search-btn" %>
+  <div>
+  検索しても無ければここから食材を登録しよう！
+  </div>
+  <div>
+  <%= link_to "食品登録", new_nutrition_path, class: "post" %>
+  </div>
 <% end %>
 
 <script src="delete.js"></script>
