@@ -15,7 +15,11 @@
 
 <br>
 【食品登録画面】<br>
-![スクリーンショット 2020-10-29 17 20 17](https://user-images.githubusercontent.com/70525516/97543080-138e7e00-1a0b-11eb-903f-c624809080dd.png)<br>
+
+![21c7539dc78c575b24c346d177aa7455](https://user-images.githubusercontent.com/70525516/98890610-b94bed80-24df-11eb-8fbc-eb4339ab2b15.png)
+
+
+<br>
 
 # URL
 
