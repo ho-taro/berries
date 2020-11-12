@@ -11,7 +11,7 @@
 <br>
 【トップページ】<br>
 
-![992df095f95e493974a8a7953604a22b](https://user-images.githubusercontent.com/70525516/98890358-23b05e00-24df-11eb-93c2-7b3fb076cd96.png)
+![f78065fe19b626ddaf89c8c56dd23176](https://user-images.githubusercontent.com/70525516/98930946-b45b5e00-2520-11eb-9bfe-a8a4dc4970e3.jpg)
 
 <br>
 【食品登録画面】<br>
