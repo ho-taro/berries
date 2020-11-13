@@ -14,10 +14,15 @@
 ![f78065fe19b626ddaf89c8c56dd23176](https://user-images.githubusercontent.com/70525516/98930946-b45b5e00-2520-11eb-9bfe-a8a4dc4970e3.jpg)
 
 <br>
-【食品登録画面】<br>
+【食品登録画面】ここから好きな食材の栄養素を登録することができます<br>
 
 ![21c7539dc78c575b24c346d177aa7455](https://user-images.githubusercontent.com/70525516/98890610-b94bed80-24df-11eb-8fbc-eb4339ab2b15.png)
 
+<br>
+
+【お気に入り食材登録機能】よく食べる食材などあればお気に入り登録することでマイページにて一覧を表示することが出来ます<br>
+
+![6ee1b594281748a989c0793d368b51ab](https://user-images.githubusercontent.com/70525516/99025365-faa9cf00-25ab-11eb-8704-25aa028d24af.png)
 
 <br>
 
