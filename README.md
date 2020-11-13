@@ -35,8 +35,7 @@ http://54.248.141.122/ <br>
 パスワード：5132<br>
 
 **テストユーザー**<br>
-Email：test@berries<br>
-Password：berries1<br>
+簡単ログインをご利用下さい
 
 # 使用技術
 
