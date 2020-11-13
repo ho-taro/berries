@@ -12,12 +12,22 @@
 <%= form_with(url: search_nutritions_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "さっそく食材を検索しよう！", class: "search-input" %>
   <%= form.submit "Search", class: "search-btn" %>
+  <% if user_signed_in? %>
   <div>検索しても無ければここから食材を登録しよう！</div>
   <div class="index-new">
     <%= link_to "食品登録", new_nutrition_path, class: "new-btn" %>
   </div>
+  <% else %>
+  <div class="index-new">
+    <p class="letter-spacing"> 登録がなかったら新規登録してみましょう！<br>初めての方はここからかんたんログイン！</p>
+    <%= link_to 'かんたんログイン', users_guest_sign_in_path, method: :post, class: "new-btn"%>
+    <p class="login-select"> 登録済みの方　　新規会員登録</p>
+    <%= link_to "Log In", new_user_session_path, class: "new-btn2" %>
+    <%= link_to "Sign Up", new_user_registration_path, class: "new-btn2" %>
+  </div>
+  <% end %>
 
-  <%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %>
+
 <% end %>
 
 <script src="delete.js"></script>

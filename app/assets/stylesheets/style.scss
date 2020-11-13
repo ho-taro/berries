@@ -736,7 +736,6 @@ h5,
 h6,
 body {
   line-height: 1.57;
-  letter-spacing: 0.15em;
   font-size: 16px;
   margin: 0;
 }
@@ -1150,6 +1149,11 @@ footer {
 .index-text {
   margin-top: 20px;
   text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.letter-spacing {
+  letter-spacing: 0.15em;
 }
 
 .new-btn {
@@ -1157,4 +1161,17 @@ footer {
   padding: 8px 20px;
   background-color: #882d91;
   color: #f0f0f0;
+}
+
+.new-btn2 {
+  border: outset 3px;
+  padding: 8px 20px;
+  background-color: #882d91;
+  color: #f0f0f0;
+  margin: 20px;
+}
+
+.login-select {
+  margin-top: 20px;
+  letter-spacing: 0.15em;
 }
