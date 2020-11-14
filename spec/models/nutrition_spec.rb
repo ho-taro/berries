@@ -25,62 +25,117 @@ RSpec.describe Nutrition, type: :model do
       it "カロリーが全角文字では食品は保存できない" do
         @nutrition.calorie = 'あああ'
         @nutrition.valid?
-        expect(@nutrition).to be_valid
+        expect(@nutrition.errors.full_messages).to include("Calorie is invalid")
       end
       it "タンパク質がないと食品は保存できない" do
         @nutrition.protein = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Protein can't be blank", "Protein is invalid")
       end
+      it "タンパク質が全角文字では食品は保存できない" do
+        @nutrition.protein = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Protein is invalid")
+      end
       it "脂質がないと食品は保存できない" do
         @nutrition.lipid = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Lipid can't be blank", "Lipid is invalid")
+      end
+      it "脂質が全角文字では食品は保存できない" do
+        @nutrition.lipid = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Lipid is invalid")
       end
       it "炭水化物がないと食品は保存できない" do
         @nutrition.carbohydrate = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Carbohydrate can't be blank", "Carbohydrate is invalid")
       end
+      it "炭水化物が全角文字では食品は保存できない" do
+        @nutrition.carbohydrate = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Carbohydrate is invalid")
+      end
       it "カリウムがないと食品は保存できない" do
         @nutrition.potassium = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Potassium can't be blank", "Potassium is invalid")
+      end
+      it "カリウムが全角文字では食品は保存できない" do
+        @nutrition.patassium = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Patassium is invalid")
       end
       it "カルシウムがないと食品は保存できない" do
         @nutrition.calcium = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Calcium can't be blank", "Calcium is invalid")
       end
+      it "カルシウムが全角文字では食品は保存できない" do
+        @nutrition.calcium = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Calcium is invalid")
+      end
       it "鉄がないと食品は保存できない" do
         @nutrition.iron = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Iron can't be blank", "Iron is invalid")
+      end
+      it "鉄が全角文字では食品は保存できない" do
+        @nutrition.iron = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Iron is invalid")
       end
       it "ビタミンAがないと食品は保存できない" do
         @nutrition.vitamin_a = '' #test
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Vitamin a can't be blank", "Vitamin a is invalid")
       end
+      it "ビタミンAが全角文字では食品は保存できない" do
+        @nutrition.vitamin_a = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Vitamin a is invalid")
+      end
       it "ビタミンB1がないと食品は保存できない" do
         @nutrition.vitamin_b1 = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Vitamin b1 can't be blank", "Vitamin b1 is invalid")
+      end
+      it "ビタミンB1が全角文字では食品は保存できない" do
+        @nutrition.vitamin_b1 = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Vitamin b1 is invalid")
       end
       it "ビタミンB2がないと食品は保存できない" do
         @nutrition.vitamin_b2 = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Vitamin b2 can't be blank", "Vitamin b2 is invalid")
       end
+      it "ビタミンB2が全角文字では食品は保存できない" do
+        @nutrition.vitamin_b2 = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Vitamin b2 is invalid")
+      end
       it "ビタミンCがないと食品は保存できない" do
         @nutrition.vitamin_c = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Vitamin c can't be blank", "Vitamin c is invalid")
       end
+      it "ビタミンCが全角文字では食品は保存できない" do
+        @nutrition.vitamin_c = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Vitamin c is invalid")
+      end
       it "食物繊維がないと食品は保存できない" do
         @nutrition.dietary_fiber = ''
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Dietary fiber can't be blank", "Dietary fiber is invalid")
+      end
+      it "食物繊維が全角文字では食品は保存できない" do
+        @nutrition.dietary_fiber = 'あああ'
+        @nutrition.valid?
+        expect(@nutrition.errors.full_messages).to include("Dietary fiber is invalid")
       end
       it "ユーザーが紐付いていないとツイートは保存できない" do
       end

@@ -1,5 +1,5 @@
 <%= form_with(url: search_nutritions_path, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "食品名を入力", class: "search-input" %>
+  <%= form.text_field :keyword, placeholder: "もう一度検索する", class: "search-input" %>
   <%= form.submit "Search", class: "search-btn" %>
 <% end %>
 
@@ -23,7 +23,6 @@
         <th class="column-color3" width="15%">ビタミンB2(mg)</th>
         <th class="column-color3" width="15%">ビタミンC(mg)</th>
         <th width="15%">食物繊維(g)</th>
-        <th width="15%">登録ユーザー</th>
       </tr>
 
       <% @nutritions.each do |nutrition| %>
@@ -68,7 +67,7 @@
         <td><%= nutrition.vitamin_b2 %></td>
         <td><%= nutrition.vitamin_c %></td>
         <td><%= nutrition.dietary_fiber %></td>
-        <td><%= nutrition.user.nickname %></td>
+
       </tr>
     <% end %>
   </table>
