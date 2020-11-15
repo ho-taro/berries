@@ -56,7 +56,7 @@ Capistrano<br>
 
 **開発環境**<br>
 
-![cbdf03e49e7829f6ff6bb5f7c2ac8a40](https://user-images.githubusercontent.com/70525516/99160503-6cf4ed80-272b-11eb-93b1-58bcc3680f55.png)
+![6d7c0d80f6d11a34cd3e42d72e44eaf3](https://user-images.githubusercontent.com/70525516/99160742-767f5500-272d-11eb-93ec-9636fc0dc3fc.png)
 
 Docker<br>
 Vsual Studio code<br>
