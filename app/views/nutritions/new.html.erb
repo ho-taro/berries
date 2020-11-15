@@ -4,7 +4,7 @@
         <h3>食品を登録  (栄養素は100gあたりの数値で入力)<br/>(栄養素は半角数字で入力)</h3>
         <%= form_with(model: @nutrition, local: true) do |form| %>
           <%= form.text_field :ingredient, autofocus: true, placeholder: "食品名" %>
-          <%= form.number_field :calorie, placeholder: "カロリー  ( kcal )", step: '0.1' %>
+          <%= form.number_field :calorie, placeholder: "カロリー  ( kcal )" %>
           <%= form.text_field :protein, placeholder: "タンパク質  ( g )" %>
           <%= form.text_field :lipid, placeholder: "脂質  ( g )" %>
           <%= form.text_field :carbohydrate, placeholder: "炭水化物  ( g )" %>

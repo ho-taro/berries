@@ -137,7 +137,7 @@ RSpec.describe Nutrition, type: :model do
         @nutrition.valid?
         expect(@nutrition.errors.full_messages).to include("Dietary fiber is invalid")
       end
-      it "ユーザーが紐付いていないとツイートは保存できない" do
+      it "ユーザーが紐付いていないと食品は保存できない" do
       end
     end
   end

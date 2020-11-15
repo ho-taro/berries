@@ -83,18 +83,18 @@
               </li>
             </ul>
           </div>
-        <td><%= nutrition.calorie %></td>
-        <td><%= nutrition.protein %></td>
-        <td><%= nutrition.lipid %></td>
-        <td><%= nutrition.carbohydrate %></td>
-        <td><%= nutrition.potassium %></td>
-        <td><%= nutrition.calcium %></td>
-        <td><%= nutrition.iron %></td>
-        <td><%= nutrition.vitamin_a %></td>
-        <td><%= nutrition.vitamin_b1 %></td>
-        <td><%= nutrition.vitamin_b2 %></td>
-        <td><%= nutrition.vitamin_c %></td>
-        <td><%= nutrition.dietary_fiber %></td>
+        <td><%= number_with_precision(nutrition.calorie, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.protein, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.lipid, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.carbohydrate, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.potassium, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.calcium, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.iron, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.vitamin_a, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.vitamin_b1, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.vitamin_b2, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.vitamin_c, precision: 1, strip_insignificant_zeros: true) %></td>
+        <td><%= number_with_precision(nutrition.dietary_fiber, precision: 1, strip_insignificant_zeros: true) %></td>
       </tr>
     <% end %>
   </table>
