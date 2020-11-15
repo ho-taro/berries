@@ -2,8 +2,8 @@ FactoryBot.define do
   factory :nutrition do
 
     ingredient {Faker::Lorem.sentence}
-    calorie {"300.0"}
-    protein {"300.0"}
+    calorie {"300"}
+    protein {"300"}
     lipid {"300"}
     carbohydrate {"300"}
     potassium {"300"}
