@@ -5,7 +5,8 @@
 </div>
 <div class="index-text">
   Beriiesは食材の各栄養素を管理できるアプリです。<br>
-  食材一覧からお好みの食材の栄養素をチェックしてみましょう。
+  食材一覧からお好みの食材の栄養素をチェックしてみましょう。<br>
+  <span style="font-size:15px; color:red;"> ★初めての方は「りんご」と入れてみて下さい！ </span>
 </div>
 
 
@@ -16,6 +17,10 @@
   <div>検索しても無ければここから食材を登録しよう！</div>
   <div class="index-new">
     <%= link_to "食品登録", new_nutrition_path, class: "new-btn" %>
+  </div>
+  <div></div>
+  <div>
+    <%= link_to "My Page", "/users/#{current_user.id}" %>
   </div>
   <% else %>
   <div class="index-new">

@@ -984,10 +984,10 @@ header.header {
   display: flex;
   justify-content: center;
   margin: 30px;
+  align-items: center;
 }
 
 .success {
-  justify-content: center;
   margin: 20px;
 }
 
@@ -1175,4 +1175,9 @@ footer {
 .login-select {
   margin-top: 20px;
   letter-spacing: 0.15em;
+}
+
+.letter-spacing2 {
+  letter-spacing: 0.15em;
+  text-align: center;
 }
