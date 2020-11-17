@@ -1,7 +1,7 @@
-<script src="delete.js"></script>
-
 <div class='main-contents'>
-  <h1 class="contents-title">お気に入り登録一覧</h1>
+  <div class="seach-image">
+    <%= image_tag ('/favorites.png') %>
+  </div>
   <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column">
     <tr class="column-name">
       <th width="30%" height="30">食品名</th>
@@ -55,7 +55,9 @@
 </div>
 
 <div class='main-contents'>
-  <h1 class="contents-title"><%= @nickname %>さんの投稿一覧</h1>
+  <div class="seach-image">
+    <%= image_tag ('/MyPost.png') %>
+  </div>
   <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column">
     <tr class="column-name">
       <th width="30%" height="30">食品名</th>
