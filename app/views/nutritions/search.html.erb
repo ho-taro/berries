@@ -3,11 +3,17 @@
   <%= form.submit "Search", class: "search-btn" %>
 <% end %>
 
-<script src="delete.js"></script>
+
 
 <div class='main-contents'>
-
-    <h1 class="contents-title">食品一覧(100gあたり)</h1>
+    <div class="seach-image">
+    <%= image_tag ('/検索結果.png') %>
+    </div>
+    <span style="font-size:15px; color:red;"> <br>★食品名にカーソルをあわせると【お気に入り登録】とご自身の登録であれば【編集】【削除】が表示されます！</span>
+    <span style="font-size:15px; color:black;"> <br>お気に入り登録してMyPageからチェック！！ </span>
+    <div class="index-new" >
+      <%= link_to "My Page", "/users/#{current_user.id}", class: "new-btn" %>
+    </div>
     <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column" align="left">
       <tr class="column-name">
         <th width="30%" height="50">食品名</th>

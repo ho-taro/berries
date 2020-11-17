@@ -18,9 +18,10 @@
   <div class="index-new">
     <%= link_to "食品登録", new_nutrition_path, class: "new-btn" %>
   </div>
-  <div></div>
-  <div>
-    <%= link_to "My Page", "/users/#{current_user.id}" %>
+  <div>下の食品一覧からお気に入り登録！</div>
+  <div>登録したらMyPageからに登録一覧を見てみよう！</div>
+  <div class="index-new" >
+    <%= link_to "My Page", "/users/#{current_user.id}", class: "new-btn" %>
   </div>
   <% else %>
   <div class="index-new">
@@ -31,15 +32,12 @@
     <%= link_to "Sign Up", new_user_registration_path, class: "new-btn2" %>
   </div>
   <% end %>
-
-
 <% end %>
-
-<script src="delete.js"></script>
 
 <div class='main-contents'>
 
     <h1 class="contents-title">食品一覧<EM STYLE="font-size: large;">(100gあたり)</EM></h1>
+    <span style="font-size:15px; color:yellow;"> ★食品名にカーソルをあわせると【お気に入り登録】とご自身の登録であれば【編集】【削除】が表示されます！ </span>
     <table border="5" width="80%" cellpadding="20" bordercolor="#882d91" class="contents-column" align="left">
       <tr class="column-name">
         <th width="30%" height="50">食品名</th>
