@@ -6,6 +6,8 @@ class User < ApplicationRecord
   has_many :nutritions
   has_many :favorites, dependent: :destroy
   has_many :fav_nutritions, through: :favorites, source: :nutrition
+  has_many :likes, dependent: :destroy
+  has_many :like_nutritions, through: :likes, source: :nutrition
 
   validates :nickname, presence: true, length: { maximum: 8 }
 

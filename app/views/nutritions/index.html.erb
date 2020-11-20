@@ -67,6 +67,22 @@
             <% else %>
               <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
             <% end %>
+
+
+
+
+
+          <%= render partial: 'nutritions/nutritions', collection: @nutritions, as: :nutrition %>
+
+
+
+
+
+
+
+
+
+
           <% else %>
             <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
           <% end %>

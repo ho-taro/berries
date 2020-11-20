@@ -2,6 +2,8 @@ class Nutrition < ApplicationRecord
   belongs_to :user
   has_many :favorites, dependent: :destroy
   has_many :fav_users, through: :favorites, source: :user
+  has_many :likes, dependent: :destroy
+  has_many :liking_users, through: :likes, source: :user
 
   #半角数字、小数点のみ可能
   NUTRITION_CODE_REGEX = /\A[-]?[0-9]+(\.[0-9]+)?\z/.freeze
