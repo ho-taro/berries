@@ -54,6 +54,7 @@ Ruby on Rails<br>
 
 JavaScript<br>
 HTML/CSS<br>
+JQuery<br>
 
 **デプロイ方法**<br>
 EC2<br>
