@@ -63,16 +63,14 @@
           <%# サインインしているかつ、お気に入り登録している食品は★がつき、カラーは赤になる%>
           <% if user_signed_in? %>
             <% if current_user.already_favorited?(nutrition, current_user) %>
-              <td class="ingredient-column fav-color" id="ingredient-column">★<%= nutrition.ingredient %>
+              <td class="ingredient-column fav-color" id="ingredient-column">★<%= nutrition.ingredient %><%= render partial: 'likes/like', locals: { nutrition: nutrition} %>
+
             <% else %>
-              <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %>
+              <td class="ingredient-column" id="ingredient-column"><%= nutrition.ingredient %><%= render partial: 'likes/like', locals: { nutrition: nutrition} %>
+
             <% end %>
 
 
-
-
-
-          <%= render partial: 'likes/like', locals: { nutrition: nutrition} %>
 
 
 
