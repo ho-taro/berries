@@ -1121,7 +1121,9 @@ footer {
 
   .search-btn {
     width: 7%;
-    border: outset 3px;
+    border-radius: 70px;
+    padding: 12px 20px;
+    background-color: #c47cca;
   }
 }
 
@@ -1163,17 +1165,14 @@ footer {
 }
 
 .new-btn {
-  border: outset 3px;
-  padding: 8px 20px;
-  background-color: #882d91;
+  border-radius: 70px;
+  padding: 18px 20px;
+  background-color: #c47cca;
   color: #f0f0f0;
 }
 
 .new-btn2 {
-  border: outset 3px;
   padding: 8px 20px;
-  background-color: #882d91;
-  color: #f0f0f0;
   margin: 20px;
 }
 
