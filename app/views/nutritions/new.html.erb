@@ -1,22 +1,26 @@
 <div class="background-image">
   <div class="contents-new">
       <div class="container">
-        <h3>食品を登録  (栄養素は100gあたりの数値で入力)<br/>(栄養素は半角数字で入力)</h3>
+        <h3>食品を登録 <br>
+          <span style="font-size:14px"> (100gあたり/半角英数) </span>
+        </h3>
         <%= form_with(model: @nutrition, local: true) do |form| %>
-          <%= form.text_field :ingredient, autofocus: true, placeholder: "食品名" %>
-          <%= form.number_field :calorie, placeholder: "カロリー  ( kcal )" %>
-          <%= form.text_field :protein, placeholder: "タンパク質  ( g )" %>
-          <%= form.text_field :lipid, placeholder: "脂質  ( g )" %>
-          <%= form.text_field :carbohydrate, placeholder: "炭水化物  ( g )" %>
-          <%= form.text_field :potassium, placeholder: "カリウム  ( mg )" %>
-          <%= form.text_field :calcium, placeholder: "カルシウム  ( mg )" %>
-          <%= form.text_field :iron, placeholder: "鉄  ( mg )" %>
-          <%= form.text_field :vitamin_a, placeholder: "ビタミンA  ( mg )" %>
-          <%= form.text_field :vitamin_b1, placeholder: "ビタミンB1  ( mg )" %>
-          <%= form.text_field :vitamin_b2, placeholder: "ビタミンB2  ( mg )" %>
-          <%= form.text_field :vitamin_c, placeholder: "ビタミンC  ( mg )" %>
-          <%= form.text_field :dietary_fiber, placeholder: "食物繊維  ( g )" %>
-          <%= form.submit "登録", class: "new-nut-btm"%>
+
+          <%= form.text_field :ingredient, autofocus: true, placeholder: "食品名", class: "new-food-info" %>
+          <%= form.text_field :calorie, placeholder: "カロリー  ( kcal )", class: "new-food-info" %>
+          <%= form.text_field :protein, placeholder: "タンパク質  ( g )", class: "new-food-info" %>
+          <%= form.text_field :lipid, placeholder: "脂質  ( g )", class: "new-food-info" %>
+          <%= form.text_field :carbohydrate, placeholder: "炭水化物  ( g )", class: "new-food-info" %>
+          <%= form.text_field :potassium, placeholder: "カリウム  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :calcium, placeholder: "カルシウム  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :iron, placeholder: "鉄  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :vitamin_a, placeholder: "ビタミンA  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :vitamin_b1, placeholder: "ビタミンB1  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :vitamin_b2, placeholder: "ビタミンB2  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :vitamin_c, placeholder: "ビタミンC  ( mg )", class: "new-food-info" %>
+          <%= form.text_field :dietary_fiber, placeholder: "食物繊維  ( g )", class: "new-food-info" %><br>
+          <div class="new-food-btn"><%= form.submit "登録" %></div>
+
         <% end %>
       </div>
     </div>

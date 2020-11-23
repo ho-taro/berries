@@ -788,21 +788,24 @@ form input[type="submit"] {
 
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
-  padding: 8px 20px;
+  padding: 8px 24px;
   font-size: 14px;
-  border: 2px solid #882d91;
   color: whitesmoke;
   font-weight: bold;
   text-align: center;
-  border: outset 3px;
   display: inline-block;
-  background-color: #882d91;
+  border-radius: 70px;
+  background-color: #c47cca;
+  &:hover {
+    background-color: #ff4eff;
+    color: white;
+  }
 }
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
   border-color: #ff4eff;
-  color: #ff4eff;
+  color: white;
 }
 
 .title {
@@ -1020,16 +1023,17 @@ header.header {
 form {
   input,
   textarea {
-    width: 100%;
     margin: 5px 0 15px;
     padding: 10px;
     border: 1px solid #d8d8d8;
   }
 
   input[type="submit"] {
-    background-color: #882d91;
     color: #fff;
     font-size: 18px;
+    width: 30%;
+    border-radius: 70px;
+    background-color: #c47cca;
 
     &:hover {
       background-color: #ff4eff;
@@ -1072,6 +1076,17 @@ form {
     font-weight: normal;
     font-size: 20px;
     color: #666;
+  }
+}
+
+.new-food-info {
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: rgb(215, 213, 236);
+    color: white;
   }
 }
 
@@ -1169,6 +1184,15 @@ footer {
   padding: 18px 20px;
   background-color: #c47cca;
   color: #f0f0f0;
+  text-align: center;
+  &:hover {
+    background-color: #ff4eff;
+    color: white;
+  }
+}
+
+.new-food-btn {
+  text-align: center;
 }
 
 .new-btn2 {
@@ -1187,12 +1211,11 @@ footer {
 }
 
 .iine__button {
-  background: linear-gradient(to right, #feb400, #ffe300);
-  line-height: 42px;
-  color: #6d3701;
+  background: linear-gradient(to right, #91cfdf, #db83d0);
+  line-height: 25px;
+  color: #ffffff;
   font-size: 14px;
   display: inline-block;
-  padding: 0 18px;
+  padding: 0 13px;
   border-radius: 100px;
-  font-weight: bold;
 }
