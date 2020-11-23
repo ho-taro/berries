@@ -40,7 +40,8 @@ http://54.248.141.122/ <br>
 **テストユーザー**<br>
 簡単ログインをご利用下さい
 
-![1818be2baf3323e8e7c579bc4358f7c9](https://user-images.githubusercontent.com/70525516/99924029-e9b34780-2d7b-11eb-84e6-a46cd020f38d.png)
+![05f19b2726a233f7443af321dd605492](https://user-images.githubusercontent.com/70525516/99924075-2717d500-2d7c-11eb-9272-c984a8dee06e.png)
+
 
 # 使用技術
 
