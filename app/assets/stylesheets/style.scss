@@ -1181,7 +1181,7 @@ footer {
 
 .new-btn {
   border-radius: 70px;
-  padding: 18px 20px;
+  padding: 13px 20px;
   background-color: #c47cca;
   color: #f0f0f0;
   text-align: center;
@@ -1196,8 +1196,16 @@ footer {
 }
 
 .new-btn2 {
+  border-radius: 70px;
   padding: 8px 20px;
   margin: 20px;
+  background-color: #c47cca;
+  color: #f0f0f0;
+  text-align: center;
+  &:hover {
+    background-color: #ff4eff;
+    color: white;
+  }
 }
 
 .login-select {
